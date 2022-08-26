@@ -48,6 +48,7 @@ def app():
     x_future = np.array(x_future)
     x_future
 
+    st.subheader('Predicción de valores por DecisionTreeRegressor')
     tree_prediction = tree.predict(x_future)
     st.write(tree_prediction)
 

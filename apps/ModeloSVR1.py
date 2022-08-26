@@ -49,6 +49,7 @@ def app():
     x_future = x_future.tail(future_days)
     x_future = np.array(x_future)
 
+    st.subheader('Predicción de valores por SVR')
     svr_prediction = svr.predict(x_future)
     st.write(svr_prediction)
 
